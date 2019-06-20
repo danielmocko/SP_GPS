@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAdminFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREATE PROFILE"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/profile_name"
+                android:hint="Profile name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <EditText
+                android:id="@+id/profile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="+3816xxxxxxx"
+                android:ems="10"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btn_create_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create profile"
+                android:onClick="createProfile"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
